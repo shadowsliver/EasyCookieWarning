@@ -1,35 +1,61 @@
+$color-ecw_cookie_warning-text: #fff;
+$color-ecw_cookie_warning-background: #202020;
+$font-ecw_cookie_warning-family: Arial, Helvetica, sans-serif;
+$font-ecw_cookie_warning-size: 16px;
+
+$color-ecw_cookie_warning-link: #42c5ff;
+$color-ecw_cookie_warning-hover: #78a4ff;
+$color-ecw_cookie_warning-active: #fff;
+
+$color-ecw_close-link: #fff;
+$color-ecw_close-hover: #78a4ff;
+$color-ecw_close-active: #fff;
+
 div#ecw_cookie_warning {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #000;
-  color: #fff;
-  height: 2em;
-  padding-top: 1em;
-  padding-left: 1em;
-  overflow: hidden;
+  background: $color-ecw_cookie_warning-background;
+  color: $color-ecw_cookie_warning-text;
+  min-height: 2em;
+  padding: 1em 0 0 1em;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
   div#ecw_close {
     position: fixed;
     height: 1em;
     width: 1em;
     bottom: 1em;
     right: 1em;
+    a {
+      text-decoration: none;
+      &:link {
+        color: $color-ecw_close-link;
+      }
+      &:visited {
+        color: $color-ecw_close-link;
+      }
+      &:hover {
+        color: $color-ecw_close-hover;
+      }
+      &:active {
+        color: $color-ecw_close-active;
+      }
+    }
   }
   a {
-    text-decoration: none;
     &:link {
-      color: #fff;
+      color: $color-ecw_cookie_warning-link;
     }
     &:visited {
-      color: #fff;
+      color: $color-ecw_cookie_warning-link;
     }
     &:hover {
-      color: #78a4ff;
+      color: $color-ecw_cookie_warning-hover;
     }
     &:active {
-      color: #fff;
+      color: $color-ecw_cookie_warning-active;
     }
   }
 }

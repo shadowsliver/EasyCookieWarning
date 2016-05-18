@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Easy cookie warning demo</title>
-    <link rel="stylesheet" href="css/easycookiewarning.min.css">
+    <link rel="stylesheet" href="css/easycookiewarning.css">
 </head>
 <body>
 <a id="ecw_clear" title="Clear" href="#" onclick="ecw_clearcookie();return false;">'clear cookies'</a>
@@ -13,7 +13,7 @@
 <script src="js/easycookiewarning.js"></script>
 <script>
     $(document).ready(function () {
-        ecw_initialize();
+        ecw_initialize('Enter your preferred text here including <a href="http://www.google.com/" target="_blank">links</a> to the correct page.', 'click to close');
     });
 </script>
 </body>

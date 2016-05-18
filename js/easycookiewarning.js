@@ -1,6 +1,6 @@
-function ecw_initialize(content, closebuttonhover, closebutton) {
+function ecw_initialize(content, closebuttonhover) {
     content = typeof content !== 'undefined' ? content : 'This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.';
-    closebutton = typeof closebutton !== 'undefined' ? closebutton : '&#x274c;';
+    closebutton = '&#x274c;';
     closebuttonhover = typeof closebuttonhover !== 'undefined' ? closebuttonhover : 'Click to close';
     if (ecw_getCookie('ecwclick') == "") {
         $('body').prepend('<div id="ecw_cookie_warning" style="display: none;">' + content + '<div id="ecw_close"><a id="ecw_close" title="' + closebuttonhover + '" href="#" onclick="ecw_close();return false;">' + closebutton + '</a></div></div>');
@@ -8,7 +8,7 @@ function ecw_initialize(content, closebuttonhover, closebutton) {
     }
 }
 
-function ecw_close(e) {
+function ecw_close() {
     document.getElementById("ecw_cookie_warning").remove();
     document.cookie = "ecwclick=true;";
 }

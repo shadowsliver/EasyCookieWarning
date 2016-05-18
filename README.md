@@ -13,3 +13,6 @@ Javascript to include a cookie usage warning.
 Style:
 
 Edit easycookiewarning.css or use the sass file and compile it using your compile method of choice.
+
+
+Text:

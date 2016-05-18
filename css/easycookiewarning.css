@@ -1,7 +1,46 @@
-div#ecw_cookie_warning { position: fixed; bottom: 0; left: 0; width: 100%; background: #000; color: #fff; height: 2em; padding-top: 1em; padding-left: 1em; overflow: hidden; font-family: Arial, Helvetica, sans-serif; }
-div#ecw_cookie_warning div#ecw_close { position: fixed; height: 1em; width: 1em; bottom: 1em; right: 1em; }
-div#ecw_cookie_warning a { text-decoration: none; }
-div#ecw_cookie_warning a:link { color: #fff; }
-div#ecw_cookie_warning a:visited { color: #fff; }
-div#ecw_cookie_warning a:hover { color: #78a4ff; }
-div#ecw_cookie_warning a:active { color: #fff; }
+div#ecw_cookie_warning {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #202020;
+  color: #fff;
+  min-height: 2em;
+  padding: 1em 0 0 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+div#ecw_cookie_warning div#ecw_close {
+  position: fixed;
+  height: 1em;
+  width: 1em;
+  bottom: 1em;
+  right: 1em;
+}
+div#ecw_cookie_warning div#ecw_close a {
+  text-decoration: none;
+}
+div#ecw_cookie_warning div#ecw_close a:link {
+  color: #fff;
+}
+div#ecw_cookie_warning div#ecw_close a:visited {
+  color: #fff;
+}
+div#ecw_cookie_warning div#ecw_close a:hover {
+  color: #78a4ff;
+}
+div#ecw_cookie_warning div#ecw_close a:active {
+  color: #fff;
+}
+div#ecw_cookie_warning a:link {
+  color: #42c5ff;
+}
+div#ecw_cookie_warning a:visited {
+  color: #42c5ff;
+}
+div#ecw_cookie_warning a:hover {
+  color: #78a4ff;
+}
+div#ecw_cookie_warning a:active {
+  color: #fff;
+}
