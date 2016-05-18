@@ -16,3 +16,5 @@ Edit easycookiewarning.css or use the sass file and compile it using your compil
 
 
 Text:
+
+use ecw_initialize('main content text, this supports html code', 'close button hover text');
