@@ -12,13 +12,14 @@ $color-ecw_close-hover: #78a4ff;
 $color-ecw_close-active: #fff;
 
 div#ecw_cookie_warning {
+  z-index: 9999999;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background: $color-ecw_cookie_warning-background;
   color: $color-ecw_cookie_warning-text;
-  min-height: 2em;
+  min-height: 2.5em;
   padding: 1em 0 0 1em;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
