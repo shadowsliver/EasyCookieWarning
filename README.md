@@ -1,5 +1,5 @@
 # EasyCookieWarning
-Javascript to include a cookie usage warning.
+Javascript to include a very basic cookie usage warning.
 
 # How to use
 
